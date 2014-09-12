@@ -1,0 +1,47 @@
+<footer class="site-footer">
+
+  <div id="contact" class="sub-footer parallax">
+  <div class="wrapper">
+  
+    <article itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+    	<header class="entry-header"><h1 itemprop="headline" class="page-heading">Contact</h1></header>
+
+      <div class="one-third first">
+        <h2>Address</h2>
+        <h3>{{ site.title }}</h3>
+        <p>405 W. 36th Ave. Suite 200<br />Anchorage, Alaska 99503</p>
+        <img src="{{site.baseurl}}/images/map.jpg" width="336" height="203" alt="Map to Vellum, LLC" />
+      </div>
+
+      <div class="one-third">
+      	<h2>Connect</h2>
+      	<p>Your small business legal needs covered for a flat monthly fee by a local Alaska attorney.</p>
+      	<p>Call {{ site.phone }}  to setup a $100 one-hour consultation.</p>
+      	<p><a href="mailto:{{ site.email }}">> E-Mail</a></p>
+      	<p class="social-media">
+      		{% if site.linkedin_username %}
+      		<a href="https://www.linkedin.com/company/{{ site.linkedin_username }}" target="_blank" title="LinkedIn" class="linkedin">LinkedIn</a>
+      		{% endif %}
+      		{% if site.twitter_username %}
+      		<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter" class="twitter">Twitter</a>
+      		{% endif %}
+      	</p>
+     </div>
+
+      <div class="one-third">
+        <h2>Monthly Legal Tip</h2>
+        <p>The better way for Alaska’s small businesses to manage their legal risks.</p>
+        <form>
+        	<label for="email">Email Address:</label><input type="text" name="email" size="40" />
+        	<input type="submit" name="submit" value="Sign Up" />
+        </form>
+      </div></article>
+    </div></div>
+	<div class="footer">
+	<div class="wrapper">
+		<div class="top"><a href="javascript:void(0)">Top</a></div>
+		<div class="creds">Copyright © {{ site.time | date: "%Y" }}  {{ site.title }}, All Rights Reserved - Website by <a href="http://www.sundogmedia.com" target="_blank" title="Sundog Media LLC">Sundog Media, LLC</a></div>
+	</div>
+  </div>
+
+</footer>

@@ -1,0 +1,15 @@
+# Site settings
+title: Vellum, LLC
+email: info@sundogmedia.com
+address1: 405 W. 36th Ave. Suite 200 
+address2: Anchorage, Alaska 99503
+phone: 907.602.8360
+description: > # this means to ignore newlines until "baseurl:"
+  Inside-Out-Legal:  Your small business legal needs covered for a flat monthly fee by a local Alaska attorney.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://vellumllc.com" # the base hostname & protocol for your site
+twitter_username: vellumllc
+linkedin_username:  vellumllc
+
+# Build settings
+markdown: kramdown

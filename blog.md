@@ -9,13 +9,13 @@ permalink: /blog/
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-      </li>
+        <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
+        <p>{{ post.excerpt }} <a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
+         </li>
     {% endfor %}
   </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

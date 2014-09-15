@@ -97,11 +97,11 @@
  * Page content
  */
 .page-content {
-    padding: 144px 0 40px;
+    padding: 184px 0 40px;
 }
 
-.page-heading {
-    font-size: 20px;
+.home .page-content{
+	padding-top: 144px;
 }
 
 .post-list {
@@ -115,7 +115,8 @@
 
 .post-meta {
     font-size: $small-font-size;
-    color: $grey-color;
+    margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .post-link {
@@ -132,10 +133,11 @@
     margin-bottom: $spacing-unit;
 }
 
-.post-title {
+.post-title, .page-heading {
     font-size: 42px;
     letter-spacing: -1px;
     line-height: 1;
+    margin-bottom: 30px;
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -168,6 +170,12 @@
             font-size: 18px;
         }
     }
+}
+
+.post-list{
+	h2{ margin-bottom: 0; }
+	
+	li{ border-bottom: 1px solid $grey-color; padding-bottom: 15px; }
 }
 
 /**
@@ -220,7 +228,7 @@
  
  #benefits { text-align: center; }
  
- #benefits img{ border: none; margin: 0 0 30px; }
+ #benefits img{ border: none; margin: 0 0 30px; background: $light-brown-color; border-radius: 90px; padding: 30px; }
  
  #benefits p{ text-align: left; }
  

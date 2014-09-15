@@ -105,12 +105,10 @@
 }
 
 .post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+    h2{ margin-bottom: 0; }
+    
+    .post{ border-bottom: 1px solid $grey-color; padding-bottom: 15px; margin-bottom: 15px; }
+    
 }
 
 .post-meta {
@@ -172,11 +170,7 @@
     }
 }
 
-.post-list{
-	h2{ margin-bottom: 0; }
-	
-	li{ border-bottom: 1px solid $grey-color; padding-bottom: 15px; }
-}
+
 
 /**
  * Columns

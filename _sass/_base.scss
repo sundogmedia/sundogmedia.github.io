@@ -117,7 +117,7 @@ a {
  */
 blockquote {
     color: $grey-color;
-    border-left: 4px solid $grey-color-light;
+    border-left: 4px solid $grey-color;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
     letter-spacing: -1px;
@@ -128,6 +128,26 @@ blockquote {
     }
 }
 
+/**
+ * Columns
+ */
+.one-third {
+    float: left;
+    margin-left: 90px;
+    width: 340px;
+    margin-bottom: 40px;
+    
+    @include media-query($on-desktop) { width: 280px;}
+    
+    @include media-query($on-tablet-landscape) { float: none; margin: 0 0 60px; width: auto; text-align: center;}
+    
+}
+
+.one-third.first {
+    margin-left: 0;
+}
+
+
 
 
 /**
@@ -136,7 +156,7 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
+    border: 1px solid $grey-color;
     border-radius: 3px;
     background-color: #eef;
 }
@@ -166,26 +186,24 @@ pre {
     margin-right: auto;
     margin-left: auto;
     @extend %clearfix;
-
-    @include media-query($on-tablet-landscape) {
+    
+    @include media-query($on-desktop) {
         max-width: $on-tablet-landscape;
     }
-    
-    @include media-query($on-tablet-portrait) {
+
+    @include media-query($on-tablet-landscape) {
         max-width: $on-tablet-portrait;
     }
     
-    @include media-query($on-tablet-small) {
+    @include media-query($on-tablet-portrait) {
         max-width: $on-tablet-small;
     }
     
-    @include media-query($on-mobile) {
-        max-width: $on-mobile;
+    @include media-query($on-tablet-small) {
+        max-width: 100%;
     }
     
-    @include media-query($on-mobile-small) {
-        max-width: $on-mobile-small;
-    }
+   
 }
 
 

@@ -200,7 +200,7 @@ pre {
     }
     
     @include media-query($on-tablet-small) {
-        max-width: 100%;
+        max-width: 90%;
     }
     
    
@@ -220,6 +220,7 @@ pre {
     }
 }
 
+.clear{ clear: both; }
 
 
 /**
@@ -237,4 +238,10 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
 }

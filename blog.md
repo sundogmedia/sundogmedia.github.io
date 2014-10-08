@@ -4,17 +4,16 @@ title: Blog
 permalink: /blog/
 ---
 
-<h1 class="page-heading">Blog</h1>
+<article class="post" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+<header class="entry-header"><h1 itemprop="headline" class="page-heading">Blog</h1></header></article>
 
   <div class="post-list">
     {% for post in site.posts %}
-      <div class="post">
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p>
-        <p>{{ post.excerpt }} <a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a></p>
-         </div>
+      <article class="post" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+        <header class="entry-header"><h1 itemprop="headline"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1> <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p></header>
+       <div itemprop="text" class="entry-content">
+        <p>{{ post.excerpt }} <a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a></p></div>
+         </article>
     {% endfor %}
   </div>
 

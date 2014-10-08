@@ -2,7 +2,7 @@
 layout: book
 title: About Vellum
 permalink: /learning-center/book/1/about-vellum/
-prev: /learning-center/book/how-to-get-started/
+prev: /learning-center/book/1/how-to-get-started/
 next: /learning-center/book/1/about-inside-out-legal/
 ---
 

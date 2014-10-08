@@ -2,7 +2,7 @@
 layout: book
 title: About Inside-Out Legal
 permalink: /learning-center/book/1/about-inside-out-legal/
-prev: /learning-center/book/about-vellum/
+prev: /learning-center/book/1/about-vellum/
 next: /learning-center/book/1/disclaimer/
 ---
 

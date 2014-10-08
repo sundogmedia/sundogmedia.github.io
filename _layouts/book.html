@@ -17,8 +17,8 @@
     </div>
       <div class="wrapper">
       	     <nav class="book-nav"><ul class="menu">
-      	    {% if page.prev %} <li><a class="prev" href="{{ prev | prepend: page.prev }}" title="Previous">Previous Page</a></li>{% endif %}
-      	     <li><a href="{{ site.baseurl }}/learning-center/book/" title="Table of Contents">Table of Contents</a></li>
+      	    {% if page.prev %} <li><a class="prev fontawesome-chevron-left" href="{{ prev | prepend: page.prev }}" title="Previous">Previous Page</a></li>{% endif %}
+      	     <li><a class="fontawesome-reorder" href="{{ site.baseurl }}/learning-center/book/" title="Table of Contents">Table of Contents</a></li>
       	    {% if page.next %} <li><a class="next" href="{{ next | prepend: page.next }}" title="Next">Next Page</a></li>{% endif %}</ul></nav>
 	      <article class="post-content" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
 	       <header class="post-header">
@@ -29,8 +29,8 @@
 	          {{ content }}
 	        </div></article>
 	      <nav class="book-nav"><ul class="menu">
-	          {% if page.prev %} <li><a class="prev" href="{{ prev | prepend: page.prev }}" title="Previous">Previous Page</a></li>{% endif %}
-	           <li><a href="{{ site.baseurl }}/learning-center/book/" title="Table of Contents">Table of Contents</a></li>
+	          {% if page.prev %} <li><a class="prev fontawesome-chevron-left" href="{{ prev | prepend: page.prev }}" title="Previous">Previous Page</a></li>{% endif %}
+	           <li><a class="fontawesome-reorder" href="{{ site.baseurl }}/learning-center/book/" title="Table of Contents">Table of Contents</a></li>
 	          {% if page.next %} <li><a class="next" href="{{ next | prepend: page.next }}" title="Next">Next Page</a></li>{% endif %}</ul></nav>
 	      
       </div>

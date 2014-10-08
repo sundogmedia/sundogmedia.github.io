@@ -409,6 +409,11 @@
   		h1, h2{ color: $background-color; }
   		
   		a{ color: $background-color;}
+  		
+  		@include media-query($on-tablet-portrait) { text-align: center;
+  			img{ float: none; margin: 0} 
+  			
+  		}
   }
   
   .book-nav{ border: 1px solid $grey-color; border-width: 1px 0;  padding: 20px 0; text-align: center; margin: 40px 0;
@@ -420,5 +425,17 @@
   		li:first-child{ border: none; }
   		
   		a{color: $text-color;}
+  		
+  		a:before{ margin-right: 10px; position: relative; top: 1px; }
+  		
+  		a.next:before { margin: 0; content: ''; }
+  		
+  		a.next:after {  margin-left: 10px; font-family: FontAwesome; content:"\f054"; position: relative; top: 1px; }
+  		
+  		@include media-query($on-tablet-portrait) { text-align: center; padding: 0;
+
+  			li{ display: block; line-height: 1.5; border: none; padding: 10px;} 
+  			
+  		}
   }
  

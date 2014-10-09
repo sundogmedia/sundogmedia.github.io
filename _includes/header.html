@@ -1,3 +1,11 @@
+{% for item in site.data.nav %}
+  	{% if item.subcategories != null  %} 
+  		{% for subcategory in item.subcategories %}
+      		{% if subcategory.subhref contains page.url %} {% capture parent  %}{{ item.href}}{% endcapture %}{% endif %}
+      	{% endfor %}
+   	{% endif %} 
+{% endfor %}
+
 <header class="site-header">
 
   <div class="wrapper">
@@ -8,11 +16,10 @@
     <button class="menu-toggle fontawesome-reorder" role="button" aria-pressed="false"></button> <ul class="menu">
 		 {% for item in site.data.nav %}
           	{% if item.subcategories != null  %} 
-          	<li class="dropdown"><a href="{{ item.href | prepend: site.baseurl }}" {% if page.url == item.href %} class="current-item" {% endif %} >{{ item.title }}</a>
+          	<li class="dropdown"><a href="{{ item.href | prepend: site.baseurl }}" {% if page.url == item.href or parent == item.href %} class="current-item" {% endif %} >{{ item.title }}</a>
           	  	 <button class="sub-menu-toggle fontawesome-chevron-down" role="button" aria-pressed="false"></button><ul class="dropdown-menu">
 	          	{% for subcategory in item.subcategories %}
-	          	<li><a href="{{ subcategory.subhref | prepend: site.baseurl }}">{{ subcategory.subtitle }}</a></li>
-	          	{% if page.url == subcategory.subhref %} {% capture parent  %}{{ item.href}}{% endcapture %}{% endif %}
+	          	<li><a href="{{ subcategory.subhref | prepend: site.baseurl }}" {% if page.url == subcategory.subhref %} class="current-item" {% endif %}>{{ subcategory.subtitle }}</a></li>
 	          	{% endfor %}
 	          	</ul>
           	</li>
@@ -34,7 +41,7 @@
   	       	 <ul class="menu">
   	     
   	    	{% for subcategory in item.subcategories %}
-  	      	<li><a href="{{ subcategory.subhref | prepend: site.baseurl }}">{{ subcategory.subtitle }}</a></li>
+  	    	<li><a href="{{ subcategory.subhref | prepend: site.baseurl }}">{{ subcategory.subtitle }}</a></li>
   	      	 {% endfor %}
   	      	 </ul>
   	      	 </nav>

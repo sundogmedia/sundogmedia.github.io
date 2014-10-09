@@ -400,7 +400,7 @@
   * Book content
   */
   
-  .page-header{ background: $blue-color; padding: 40px 0; color: $background-color;
+  .page-header{ background: $blue-color; padding: 40px 0; color: $background-color; margin: 0 0 40px;
   		
   		img{ float: left; border: none; margin-right: 40px; }
   		
@@ -416,7 +416,7 @@
   		}
   }
   
-  .book-nav{ border: 1px solid $grey-color; border-width: 1px 0;  padding: 20px 0; text-align: center; margin: 40px 0;
+  .book-nav{ border: 1px solid $grey-color; border-width: 1px 0;  padding: 20px 0; text-align: center; margin: 0 0 40px;
   		
   		ul{ margin: 0; }
   		

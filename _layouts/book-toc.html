@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="book">
+
+    {% include header.html %}
+
+    <div class="page-content">
+    <div class="page-header">
+    	<div class="wrapper"><article class="post" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+    	<img src="{{ site.baseurl }}/images/book.jpg" width="238" height="290" alt="Inside-Out Legal" />
+    	<header class="entry-header"><h1 itemprop="headline" class="page-heading">Book: Inside-Out Legal</h1></header>
+    	<div itemprop="text" class="entry-content"><h2>A Book for All Small Business Owners in Alaska</h2><p>It's much better to manage your legal risks than to let them manage you.  That's the Inside-out Legal way.  Reading this book gets you started on the right path.  Learn about your legal risks and the laws you need to be aware of.</p><p>Purchase Book:  <a href="http://www.amazon.com/Inside-out-Legal-better-Alaskas-businesses-ebook/dp/B007SNYYAO/ref=sr_1_1?ie=UTF8&qid=1410304991&sr=8-1&keywords=Inside-Out-Legal" target="_blank" title="Buy Inside-Out-Legal on Amazon">Amazon.com</a> or <a href="http://www.barnesandnoble.com/w/inside-out-legal-andrew-mitton/1113933191?ean=9781594332920" target="_blank" title="Buy Inside-Out-Legal on Barnes & Noble">Barnes &amp; Noble</a></p></div>
+    	</article></div>
+    </div>
+      <div class="wrapper">
+      	   <article class="post-content" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+	       <header class="post-header">
+	          <h1 class="post-title">{{ page.title }}</h1>
+	        </header>
+	      
+	        <div itemprop="text" class="entry-content">
+	          {{ content }}
+	        </div></article>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
+

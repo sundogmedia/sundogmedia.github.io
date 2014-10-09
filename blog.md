@@ -1,12 +1,10 @@
 ---
-layout: default
+layout: post
 title: Blog
 permalink: /blog/
 ---
 
 <article class="post" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
-<header class="entry-header"><h1 itemprop="headline" class="page-heading">Blog</h1></header></article>
-
   <div class="post-list">
     {% for post in site.posts %}
       <article class="post" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">

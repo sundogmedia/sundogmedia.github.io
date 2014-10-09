@@ -1,5 +1,5 @@
 ---
-layout: book
+layout: book-toc
 title: Table of Contents
 permalink: /learning-center/book/
 ---

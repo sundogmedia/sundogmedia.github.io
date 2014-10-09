@@ -52,7 +52,7 @@
 	 @include media-query($on-desktop) {
 	   		.site-nav{ margin: 20px 0; font-size: 20px; }
 	   		
-	   		.sub-nav a{ padding: 0 18px; }
+	   		.sub-nav a{ padding: 0 25px; }
 	   		
 	  }
 	  
@@ -60,13 +60,13 @@
 	  
 	  		.site-nav{ margin: 20px 0 0 0; float: right; }
 	  		
-	  		.site-nav li{ margin: 0 18px }
+	  		.site-nav li{ margin: 0 18px;  }
 	  		
 	  		.widget-right{ float: none; clear: both; padding-top: 20px; }
 	  		
 	  		.widget-right a{ max-width: 400px; margin: 6px auto 0; }
 	  		
-	  		.sub-nav a{ padding: 0 16px; }
+	  		.sub-nav a{ padding: 0 13px; font-size: 16px; }
 	  		
 	  
 	  }
@@ -176,10 +176,10 @@
  * Page/Post content
  */
  
-.page-content { padding: 183px 0 40px;
+.page-content { padding: 202px 0 40px;
     
     @include media-query($on-tablet-landscape) {
-      	padding-top: 243px;
+      	padding-top: 298px;
      }
      
      @include media-query($on-tablet-portrait) {
@@ -187,9 +187,10 @@
       }
 }
 
-.page .page-content{ padding-top:  263px; 
+
+.post .page-content{ padding-top:  162px; 
 	@include media-query($on-tablet-landscape) {
-	  	padding-top: 403px;
+	  	padding-top: 242px;
 	 }
 	 
 	 @include media-query($on-tablet-portrait) {
@@ -198,7 +199,11 @@
 
 }
 
+
+
 .post-list {
+	h1{ font-size: 30px; margin: 0; }
+	
     h2{ margin-bottom: 0; }
     
     .post{ border-bottom: 1px solid $grey-color; padding-bottom: 15px; margin-bottom: 15px; }
@@ -212,10 +217,6 @@
 }
 
 
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
 .post-title, .page-heading {
     font-size: 42px;
     letter-spacing: -1px;
@@ -228,13 +229,6 @@
 /**
  * Home Page
  */
- 
- .home .page-content{ padding: 203px 0 0 0;
- 
- 	@include media-query($on-tablet-landscape) { padding-top: 298px; }
- 	
- 	@include media-query($on-tablet-portrait) { padding-top: 0; }
-  }
  
  .parallax{ padding: 80px 0 0; background: $background-color; 
  
@@ -405,6 +399,12 @@
   		img{ float: left; border: none; margin-right: 40px; }
   		
   		.entry-header{ padding-top: 40px; }
+  		
+  		h1, .post-meta{ margin-bottom: 0; }
+  		
+  		.post-meta{ margin-top: 5px; font-size: 20px; }
+  		
+  		h2{ margin: 15px 0; }
   		
   		h1, h2{ color: $background-color; }
   		

@@ -34,7 +34,7 @@
 
   </div>
   	    {% for item in site.data.nav %}
-  	    {% if page.url == item.href or parent == item.href %} 
+  	    {% if page.url == item.href or parent == item.href or (page.layout == 'book' and item.href == '/learning-center/book/') %} 
   	     {% if item.subcategories != null  %} 
   	     <div data-top="opacity: 0" data--50-top="opacity: 1" class="sub-nav"><div class="wrapper">
   	       	<nav class="site-sub-nav">

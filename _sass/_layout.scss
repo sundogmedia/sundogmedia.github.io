@@ -41,7 +41,7 @@
 	 	
 	 	li{ display: inline-block; padding: 20px 0; font-size: 18px; text-transform: none; line-height: 1; }
 	 	
-	 	a{ color: $text-color; padding: 0 28px; border-left: 1px solid $text-color;  }
+	 	a{ color: $text-color; padding: 0 28px; border-left: 1px solid rgba(114,113,101,0.2);  }
 	 	
 	 	li:first-child a{ border-left: none; }
 	 	
@@ -131,6 +131,8 @@
  
 .site-footer{
 
+    #contact{ background: $grey-color; }
+
 	.one-third{
 		input[type=text]{ width: 100%; border-radius: 6px; border: 1px solid $grey-color; padding: 20px 40px; margin-bottom: 20px; font-size: $base-font-size; color: $text-color; }
 		
@@ -149,7 +151,7 @@
 		
 	}
 	
-	.footer{ background: $grey-color;  padding: 40px 0 90px; font-size: 14px;
+	.footer{ background: $dark-grey-color;  padding: 40px 0 90px; font-size: 14px;
 	
 		.top{ float: left; }
 		
@@ -394,11 +396,13 @@
   * Book content
   */
   
-  .page-header{ background: $blue-color; padding: 40px 0; color: $background-color; margin: 0 0 40px;
+  .page-header{ background: $blue-color; padding: 20px 0 0; color: $background-color; margin: 0 0 40px;
   		
-  		img{ float: left; border: none; margin-right: 40px; }
+  		img{ float: left; border: none; margin-right: 20px; }
   		
   		.entry-header{ padding-top: 40px; }
+  		
+  		.post-header{margin: 20px 0 40px;}
   		
   		h1, .post-meta{ margin-bottom: 0; }
   		
@@ -432,6 +436,8 @@
   		
   		a.next:after {  margin-left: 10px; font-family: FontAwesome; content:"\f054"; position: relative; top: 1px; }
   		
+  		a:hover{ color: $link-color; }
+  		
   		@include media-query($on-tablet-portrait) { text-align: center; padding: 0;
 
   			li{ display: block; line-height: 1.5; border: none; padding: 10px;} 
@@ -439,3 +445,9 @@
   		}
   }
  
+ 
+ .toc{
+ 	li{ font-weight: 600; font-size: 24px; margin-bottom: 40px; }
+ 	
+ 	li li{ font-weight: 300; font-size: 20px; margin: 0; }
+ }

@@ -108,6 +108,8 @@ a {
     }
 }
 
+.more-link{ display: inline-block; padding: 8px 12px; background: $link-color; color: #fff !important; border-radius: 6px; }
+.more-link:hover{ background: $brown-color; }
 .more-link:before{ content: '»'; font-size: 20px; margin-right: 4px; }
 
 

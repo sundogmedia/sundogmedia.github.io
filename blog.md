@@ -10,7 +10,7 @@ permalink: /blog/
       <article class="post" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
         <header class="entry-header"><h1 itemprop="headline"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1> <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p></header>
        <div itemprop="text" class="entry-content">
-        <p>{{ post.excerpt }} <a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a></p></div>
+        <p>{{ post.excerpt }}</p> <p><a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a></p></div>
          </article>
     {% endfor %}
   </div>

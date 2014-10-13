@@ -189,6 +189,10 @@
       }
 }
 
+.home .page-content{
+	padding-bottom: 0;
+}
+
 
 .post .page-content{ padding-top:  162px; 
 	@include media-query($on-tablet-landscape) {

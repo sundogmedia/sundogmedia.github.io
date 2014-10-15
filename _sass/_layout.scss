@@ -134,7 +134,7 @@
     #contact{ background: $grey-color; }
 
 	.one-third{
-		input[type=text]{ width: 100%; border-radius: 6px; border: 1px solid $grey-color; padding: 20px 40px; margin-bottom: 20px; font-size: $base-font-size; color: $text-color; }
+		input[type=email]{ width: 100%; border-radius: 6px; border: 1px solid $grey-color; padding: 20px 40px; margin-bottom: 20px; font-size: $base-font-size; color: $text-color; }
 		
 		input[type=submit]{ background: $link-color; border-radius: 6px; padding: 20px 40px; color: $background-color; text-transform: uppercase; border: none; font-size: $base-font-size; cursor: pointer;  }
 		
@@ -300,7 +300,7 @@
  	
  	.tabs{ position: relative; }
  	
- 	.tab{ display: none; position: absolute; right: 0; padding: 30px; border-radius: 3px; background: $link-color; width: 380px; color: $background-color; }
+ 	.tab{ display: none; position: absolute; right: 0; padding: 30px; border-radius: 3px; background: $link-color; width: 380px; color: $background-color; font-size: 18px; }
  	
  	#about-tab{ display: block; }
  	

@@ -255,3 +255,25 @@ pre {
  .pagination a{ display: inline-block; background: $brown-color; padding: 8px 12px; color: #fff; border-radius: 6px; }
  
  .pagination a:hover, .pagination a.on{ background: $link-color; }
+ 
+ /**
+  * Popup
+  */
+  .mfp-content {
+   position: relative;
+   padding: 40px 0;
+   width:auto;
+   max-width: 500px;
+ }
+ 
+ .popup-content{ background: #FFF; padding: 40px;
+ 
+ 	input[type=email]{ width: 100%; border-radius: 6px; border: 1px solid $grey-color; padding: 20px 40px; margin-bottom: 20px; font-size: $base-font-size; color: $text-color; }
+ 	
+ 	input[type=submit]{ background: $link-color; border-radius: 6px; padding: 20px 40px; color: $background-color; text-transform: uppercase; border: none; font-size: $base-font-size; cursor: pointer;  }
+ 	
+ 	input[type=submit]:hover{ background: $brown-color; }
+ 	
+ }
+ 
+ .mfp-close-btn-in .mfp-close{ color: #fff !important; }

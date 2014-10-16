@@ -1,7 +1,7 @@
 $(document).ready(function(){
  
 	 //Scroll navigation
-	 $('.site-header a[href*=#]:not([href=#]), #home a[href*=#]:not([href=#])').click(function() {
+	 $('.sub-nav a[href*=#]:not([href=#]), #home a[href*=#]:not([href=#])').click(function() {
 	 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 	 	      var target = $(this.hash);
 	 	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -32,20 +32,14 @@ $(document).ready(function(){
 	 			jQuery(this).next( '.dropdown-menu' ).slideToggle( 'fast' );
 	 		});
 	 		
-	 		//Click event to scroll to top
-	 			jQuery('.scrollToTop').click(function(){
-	 				jQuery('html, body').animate({scrollTop : 0},1000);
-	 				return false;
-	 			});	
-	 
 	 //Click event to scroll to top
 	 	$('.top a').click(function(){
 	 		$('html, body').animate({scrollTop : 0},1000);
 	 		return false;
 	 	});	
 	 	
-	 //Pop-up	
-	 $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+	 //Pop-ups	
+	 $('.popup-youtube').magnificPopup({
 	 	          disableOn: 700,
 	 	          type: 'iframe',
 	 	          mainClass: 'mfp-fade',
@@ -53,6 +47,11 @@ $(document).ready(function(){
 	 	          preloader: false,
 	 	
 	 	          fixedContentPos: false
+	 	        });
+	 	        
+	 $('.popup-with-form').magnificPopup({
+	 	          type: 'inline',
+	 	          midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
 	 	        });
 	 	        
 	//Attorney Tabs
@@ -65,7 +64,7 @@ $(document).ready(function(){
 	}); 
 	
 	//Testimonial Carousel
-	 var owl = $("#carousel");
+	var owl = $("#carousel");
 	 
 	owl.owlCarousel({
 		items : 3, 

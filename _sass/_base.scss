@@ -247,3 +247,11 @@ pre {
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
 }
+
+/**
+ * Pagination
+ */
+ 
+ .pagination a{ display: inline-block; background: $brown-color; padding: 8px 12px; color: #fff; border-radius: 6px; }
+ 
+ .pagination a:hover, .pagination a.on{ background: $link-color; }

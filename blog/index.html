@@ -1,0 +1,37 @@
+---
+layout: post
+title: Blog
+---
+
+<article class="post" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+  <div class="post-list">
+    {% for post in paginator.posts %}
+      <article class="post" itemtype="http://schema.org/BlogPosting" itemscope="itemscope">
+        <header class="entry-header"><h1 itemprop="headline"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1> <p class="post-meta">{{ post.date | date: '%B %d, %Y' }}</p></header>
+       <div itemprop="text" class="entry-content">
+        <p>{{ post.excerpt }}</p> <p><a class="more-link" href="{{ post.url | prepend: site.baseurl }}">Read More</a></p></div>
+         </article>
+    {% endfor %}
+  </div>
+
+  <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  
+  {% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    {% endif %}
+  
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == 1 %}
+        <a {% if paginator.page == page %} class="on" {% endif %} href="{{ '/blog/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+      {% else %}
+        <a {% if paginator.page == page %} class="on" {% endif %} href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+      {% endif %}
+    {% endfor %}
+  
+    {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    {% endif %}
+  </div>
+  {% endif %}

@@ -259,7 +259,10 @@
  
  }
  
- #home, #cost, #other{ background-position: 100% auto; }
+ #home, #cost, #other{ background-position: 100% auto; background-size: 100% auto !important;
+ 	
+ 	@include media-query($on-desktop) { background-size: auto !important; }
+ }
  
  #home { background: url('../images/bg-home.jpg') no-repeat center 200px; background-attachment: fixed;  padding-top: 140px; color: $background-color; text-align: center; font-size: 36px; min-height: 523px; 
  
@@ -269,7 +272,8 @@
  	
  	a:hover{ background: $background-color; color: $link-color; text-shadow: none;  }
  	
- 	@include media-query($on-tablet-portrait) { background-position: center 0; padding-top: 100px; font-size: 30px; background-size: auto 100%;
+ 	
+ 	@include media-query($on-tablet-portrait) { background-position: center 0; padding-top: 100px; font-size: 30px; background-size: auto 100% !important;
  		h1{ font-size: 58px;}
  		
  		br{ display: none; } 
@@ -388,7 +392,7 @@
    
  }
   
- #other{ background: url('../images/bg-other.jpg') no-repeat; background-attachment: fixed; 
+ #other{ background: url('../images/bg-other.jpg') no-repeat center top; background-attachment: fixed; 
  	
  	.one-third{ background: rgba(255,255,255,0.7); padding: 20px; border-radius: 3px; }
  	

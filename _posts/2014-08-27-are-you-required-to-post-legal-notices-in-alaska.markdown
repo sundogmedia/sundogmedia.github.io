@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Are You Required to Post Legal Notices in Alaska?"
-date:   2014-10-08 13:45:06
+date:   2014-08-27 13:45:06
 categories: News
 ---
 My first experience as a law student was the law library. I walked into it and saw one whole floor of books full of laws, cases, and regulations. I was overwhelmed. Then I found out there were four more floors of books and thought to myself, "that's ridiculous."

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Employee vs. Independent Contractor"
-date:   2014-10-12 13:45:06
+date:   2014-09-24 13:45:06
 categories: News
 ---
 If it walks like a duck, quacks like a duck, and looks like a duck, then it’s a duck even if you call it a cow. The same is true with independent contractors. If it walks like an employee, quacks like an employee, and looks like an employee, then it’s an employee even if you call it an independent contractor. So make sure your independent contractors are really independent contractors or structure the relationship in a way that fits an independent contractor.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How Do You Sign Legal Documents?"
-date:   2014-10-07 13:45:06
+date:   2014-08-20 13:45:06
 categories: News
 ---
 I once asked my daughter, “how did you sleep last night?” She was about three-years-old at the time. She looked at me with a confused look and said, “well, I laid down in my bed and I closed my eyes and I went to sleep.” I guess she took my question literally. Of course that’s not what I meant, but it was cute nonetheless.

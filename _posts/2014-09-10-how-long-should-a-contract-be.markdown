@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How Long Should a Contract Be?"
-date:   2014-10-10 13:45:06
+date:   2014-09-10 13:45:06
 categories: News
 ---
 "A wizard is never later, nor is he early, he arrives precisely when he means to." J.R.R. Tolkien The Lord of the Rings. You'll hear something similar from most lawyers. A contract is never too long, nor too short, it's precisely what it's meant to be.

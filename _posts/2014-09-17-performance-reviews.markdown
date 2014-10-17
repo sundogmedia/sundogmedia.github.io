@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Performance Reviews"
-date:   2014-10-11 13:45:06
+date:   2014-09-17 13:45:06
 categories: News
 ---
 My teenage son will pour himself a bowl of cereal and bring it up to his room to eat while he does his homework. He'll finish his cereal and then forget to bring the bowl back down to the kitchen. His dirty dish will sit in his room until we ask him to put it in the dishwasher (I'm sure none of your teenagers do things like this). So what do we do? Do we punish him? Do we ask him to put his dish away? Do we take care of the dish for him? Do we take the time to teach him the value of courtesy? Do we ignore it? Or do we just accept him for what he is? 

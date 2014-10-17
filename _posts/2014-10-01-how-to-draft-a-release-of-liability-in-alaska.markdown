@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Draft a Release of Liability in Alaska"
-date:   2014-10-13 13:45:06
+date:   2014-10-01 13:45:06
 categories: News
 ---
 Life is risky. People get hurt. And unfortunately people sue. Yes, we live in a litigious society. One common way to mitigate these risks is to have your customers sign a release of liability. Three cases involving releases have gone to the Alaska Supreme Court and all three releases failed to protect the business owner. But last Friday the Alaska Supreme Court finally upheld a release and provided business owners some guidance on how to draft a release. Here’s what they’re looking for:

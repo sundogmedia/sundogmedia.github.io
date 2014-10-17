@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A New Way to Transfer your Home in Alaska if You Die"
-date:   2014-10-14 13:45:06
+date:   2014-10-08 13:45:06
 categories: News
 ---
 We spend a lot of time on stuff. 

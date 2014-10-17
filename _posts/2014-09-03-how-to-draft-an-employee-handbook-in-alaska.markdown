@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "How to Draft an Employee Handbook in Alaska?"
-date:   2014-10-09 13:45:06
+date:   2014-09-03 13:45:06
 categories: News
 ---
 What does an employee handbook have to do with surgical anesthesia? Yes, they both put you to sleep; but that's not what I'm getting at. Surgical anesthesia came onto the scene back in the early 1800's—about the same time that antiseptics arrived. The one caught on quickly—doctors loved anesthesia—but the other didn't. Why? Because surgical anesthesia solved an immediate and visible problem, while antiseptics solved an invisible problems (germs) and the effects of antiseptics were not immediate.

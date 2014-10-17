@@ -269,7 +269,7 @@
  	
  	a:hover{ background: $background-color; color: $link-color; text-shadow: none;  }
  	
- 	@include media-query($on-desktop) { background-size: auto;  }
+ 	@include media-query(1600) { background-size: auto;  }
  	
  	@include media-query($on-tablet-portrait) { background-position: center 0; padding-top: 100px; font-size: 30px; background-size: auto 100%;
  		h1{ font-size: 58px;}
@@ -283,7 +283,7 @@
  
  #cost{ background: url('../images/bg-cost.jpg') no-repeat center bottom; background-attachment: fixed;  background-size: 100% auto;
  
- 	@include media-query($on-desktop) { background-size: auto;  }
+ 	@include media-query(1600) { background-size: auto;  }
  	
  	@include media-query($on-tablet-portrait) { background-position: center 0; background-size: auto 100%;  }
  }
@@ -398,7 +398,7 @@
  	
  	a{ font-weight: 400; }
  	
- 	@include media-query($on-desktop) { background-size: auto;  }
+ 	@include media-query(1600) { background-size: auto;  }
  }
  
  

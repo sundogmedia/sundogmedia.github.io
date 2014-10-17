@@ -259,7 +259,7 @@
  
  }
   
- #home { background: url('../images/bg-home.jpg') no-repeat center 200px; background-attachment: fixed;   padding-top: 140px; color: $background-color; text-align: center; font-size: 36px; min-height: 523px; 
+ #home { background: url('../images/bg-home.jpg') no-repeat center 200px; background-attachment: fixed; background-size: 100% auto;  padding-top: 140px; color: $background-color; text-align: center; font-size: 36px; min-height: 523px; 
  
  	h1{ color: $background-color; background: none; font-size: 64px; text-shadow: 1px 1px 1px #4a91b1; text-transform: none; margin: 0 auto;  }
  	
@@ -279,7 +279,7 @@
  
  }
  
- #cost{ background: url('../images/bg-cost.jpg') no-repeat center bottom; background-attachment: fixed;  
+ #cost{ background: url('../images/bg-cost.jpg') no-repeat center bottom; background-attachment: fixed;  background-size: 100% auto;
  
  	
  	
@@ -390,7 +390,7 @@
    
  }
   
- #other{ background: url('../images/bg-other.jpg') no-repeat center top; background-attachment: fixed;  
+ #other{ background: url('../images/bg-other.jpg') no-repeat center top; background-attachment: fixed;  background-size: 100% auto;
  	
  	.one-third{ background: rgba(255,255,255,0.7); padding: 20px; border-radius: 3px; }
  	
